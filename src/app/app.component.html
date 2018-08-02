@@ -1,7 +1,15 @@
 <div class="container">
   <div class="row">
+    <div class="input-group mb-3 col-6">
+      <input  type="text" class="form-control" [(ngModel)] = "searchStr">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Поиск по имени</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
     <app-user
-      *ngFor='let u of users'
+      *ngFor='let u of users | search:searchStr'
       [user] = 'u'
     ></app-user>
   </div>

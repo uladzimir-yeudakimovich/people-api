@@ -7,15 +7,15 @@
       class="card-title"
       [ngClass] = "{ 'marked': isMarked }"
     >
-      <h5>{{ user.name }}</h5>
+      <h5>{{ user.name | uppercase }}</h5>
     </div>
     <div class="card-content">
       <p>{{ user.geo }}</p>
     </div>
     <div class="card-action">
-      <a
+      <button
         (click) = "onClick()"
-        class="btn btn-primary" ref="#">Отметить</a>
+        class="btn btn-primary" ref="#">Отметить</button>
     </div>
   </div>
 </div>
