@@ -1,0 +1,21 @@
+<div class="">
+  <div class="card" appHover>
+    <div class="card-image">
+      <img src="{{ user.image }}" alt="">
+    </div>
+    <div
+      class="card-title"
+      [ngClass] = "{ 'marked': isMarked }"
+    >
+      <h5>{{ user.name }}</h5>
+    </div>
+    <div class="card-content">
+      <p>{{ user.geo }}</p>
+    </div>
+    <div class="card-action">
+      <a
+        (click) = "onClick()"
+        class="btn btn-primary" ref="#">Отметить</a>
+    </div>
+  </div>
+</div>

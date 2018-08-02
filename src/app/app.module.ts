@@ -1,19 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+
 import { AppComponent } from './app.component';
-import { environment } from '../environments/environment';
+import { UserComponent } from './user/user.component';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserComponent,
+    HoverDirective
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
