@@ -5,12 +5,18 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class UserService {
 
+  size = 8;
+
+  setSize(size) {
+    this.size = size;
+  }
+
   constructor(private http: Http) {
     this.http = http;
   }
 
   getUsers() {
-    return this.http.get('https://randomuser.me/api/?inc=gender,name,picture,location&results=8&nat=gb').pipe(
+    return this.http.get(`https://randomuser.me/api/?inc=gender,name,picture,location&results=${this.size}&nat=gb`).pipe(
       map(response => response.json())).pipe(
         map(response => response.results)).pipe(
           map(users => {
