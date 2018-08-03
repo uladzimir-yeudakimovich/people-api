@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { UserService } from './user.service';
 import { UserComponent } from './user/user.component';
 import { HoverDirective } from './hover.directive';
 import { SearchPipe } from './search.pipe';
@@ -32,7 +33,7 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
