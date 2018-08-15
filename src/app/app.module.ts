@@ -15,6 +15,7 @@ import { SetupPageComponent } from './setup-page/setup-page.component';
 
 
 const routes: Routes = [
+  { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'setup', component: SetupPageComponent }
 ];
