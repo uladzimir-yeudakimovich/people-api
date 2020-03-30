@@ -6,7 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbCollapseModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { UserService } from './user.service';
+import { UserService } from './user/user.service';
 import { UserComponent } from './user/user.component';
 import { HoverDirective } from './hover.directive';
 import { SearchPipe } from './search.pipe';
