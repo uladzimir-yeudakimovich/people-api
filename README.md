@@ -1,5 +1,4 @@
-# Do you want to see my Angular-app version 6.1.1.?
-# <a href="https://uladzimir-yeudakimovich.github.io/angular-app/">Click there ;)</a>
+# <a href="https://uladzimir-yeudakimovich.github.io/people-api/">people-api</a>
 # Do you want to see the optimization?
 # <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fuladzimir-yeudakimovich.github.io%2Fangular-app%2F&tab=mobile">Click there ;)</a>
 # Do you want to see the validity?

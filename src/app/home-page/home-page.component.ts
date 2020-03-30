@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { UserService } from '../user.service';
 
 @Component({
@@ -7,9 +8,8 @@ import { UserService } from '../user.service';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-
-  users = [];
-  searchStr = '';
+  users:Array<object> = [];
+  searchStr:string = '';
 
   constructor(private userService: UserService) {}
 

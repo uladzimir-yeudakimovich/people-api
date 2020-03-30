@@ -1,18 +1,15 @@
 import { Http } from '@angular/http';
-import { Injectable } from '../../node_modules/@angular/core';
+import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 
 @Injectable()
 export class UserService {
+  size: number = 8;
 
-  size = 8;
+  constructor(private http: Http) {}
 
-  setSize(size) {
+  setSize(size: number) {
     this.size = size;
-  }
-
-  constructor(private http: Http) {
-    this.http = http;
   }
 
   getUsers() {

@@ -3,15 +3,24 @@
   margin: 10px 5px;
   text-align: center;
 }
+
 .card-title {
   height: 50px;
   margin-top: -50px;
   color: white;
 }
-.card-content {height: 130px;}
-.card-action {margin-bottom: 10px;}
 
-.marked {color: aqua;}
+.card-content {
+  height: 130px;
+}
+
+.card-action {
+  margin-bottom: 10px;
+}
+
+.marked {
+  color: aqua;
+}
 
 .hovered {
   transform: scale(1.05);

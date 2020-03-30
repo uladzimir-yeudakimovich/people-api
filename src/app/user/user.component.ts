@@ -6,12 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent {
-
   @Input() user;
-  isMarked = false;
+  isMarked:boolean = false;
 
   onClick() {
     this.isMarked = true;
   }
-
 }
